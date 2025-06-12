@@ -62,7 +62,11 @@ const Hero = () => {
             </div>
           </div>
 
-          <Button className="bb-gradient text-white text-lg px-8 py-3 rounded-full hover:scale-105 transition-transform shadow-lg">
+          <Button 
+            className="bb-gradient text-white text-lg px-8 py-3 rounded-full hover:scale-105 transition-transform shadow-lg"
+            onClick={() => window.open('https://g.co/kgs/Wsr2kfz', '_blank')}
+          >
+            <MapPin className="w-5 h-5 mr-2" />
             Visit Our Store Today!
           </Button>
         </div>
