@@ -1,6 +1,6 @@
 
 import { Button } from "@/components/ui/button";
-import { MapPin, Clock, Phone } from "lucide-react";
+import { MapPin, Clock } from "lucide-react";
 
 const Hero = () => {
   return (
@@ -13,14 +13,14 @@ const Hero = () => {
         <img 
           src="/lovable-uploads/2475a604-6733-4eff-a091-5cbe5f061604.png" 
           alt="Ni Character" 
-          className="w-24 h-24 drop-shadow-lg"
+          className="w-24 h-24 object-contain drop-shadow-lg"
         />
       </div>
       <div className="absolute top-32 right-16 animate-bounce" style={{ animationDelay: '1s' }}>
         <img 
           src="/lovable-uploads/f6260070-2f72-4e01-ae7f-1df0f77d5756.png" 
           alt="Ra Character" 
-          className="w-28 h-28 drop-shadow-lg"
+          className="w-28 h-28 object-contain drop-shadow-lg"
         />
       </div>
 
@@ -41,7 +41,7 @@ const Hero = () => {
             </p>
           </div>
 
-          <div className="grid md:grid-cols-3 gap-6 mb-8 text-left">
+          <div className="grid md:grid-cols-2 gap-6 mb-8 text-left">
             <div className="bg-white rounded-lg p-6 shadow-lg border-l-4 border-bb-blue">
               <MapPin className="w-8 h-8 text-bb-blue mb-3" />
               <h3 className="font-semibold text-gray-800 mb-2">Location</h3>
@@ -58,15 +58,6 @@ const Hero = () => {
               <p className="text-gray-600 text-sm">
                 Sunday - Thursday: 10AM - 10PM<br />
                 Friday - Saturday: 10AM - 11PM
-              </p>
-            </div>
-            
-            <div className="bg-white rounded-lg p-6 shadow-lg border-l-4 border-bb-blue">
-              <Phone className="w-8 h-8 text-bb-blue mb-3" />
-              <h3 className="font-semibold text-gray-800 mb-2">Contact</h3>
-              <p className="text-gray-600 text-sm">
-                Phone: +971 XX XXX XXXX<br />
-                Instagram: @beautiful_bundles_co
               </p>
             </div>
           </div>

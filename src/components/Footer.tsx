@@ -1,5 +1,5 @@
 
-import { Instagram, MapPin, Clock, Phone, Mail } from "lucide-react";
+import { Instagram, MapPin, Clock, Mail } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
 const Footer = () => {
@@ -11,7 +11,7 @@ const Footer = () => {
             <img 
               src="/lovable-uploads/9ff5253f-18eb-430f-9092-7794521eaffa.png" 
               alt="Beautiful Bundles Logo" 
-              className="h-16 w-auto mb-4 filter brightness-0 invert"
+              className="h-16 w-auto mb-4 filter brightness-0 invert object-contain"
             />
             <p className="text-gray-400 mb-4">
               Your trusted destination for authentic branded products at unbeatable prices.
@@ -20,12 +20,12 @@ const Footer = () => {
               <img 
                 src="/lovable-uploads/2475a604-6733-4eff-a091-5cbe5f061604.png" 
                 alt="Ni" 
-                className="w-8 h-8"
+                className="w-8 h-8 object-contain"
               />
               <img 
                 src="/lovable-uploads/f6260070-2f72-4e01-ae7f-1df0f77d5756.png" 
                 alt="Ra" 
-                className="w-8 h-8"
+                className="w-8 h-8 object-contain"
               />
               <span className="text-sm text-gray-400">Meet Ni & Ra!</span>
             </div>
@@ -36,7 +36,7 @@ const Footer = () => {
             <ul className="space-y-2">
               <li><a href="#about" className="text-gray-400 hover:text-white transition-colors">About Us</a></li>
               <li><a href="#brands" className="text-gray-400 hover:text-white transition-colors">Our Brands</a></li>
-              <li><a href="#location" className="text-gray-400 hover:text-white transition-colors">Store Location</a></li>
+              <li><a href="#location" className="text-gray-700 hover:text-white transition-colors">Store Location</a></li>
               <li><a href="#contact" className="text-gray-400 hover:text-white transition-colors">Contact</a></li>
             </ul>
           </div>
@@ -66,11 +66,10 @@ const Footer = () => {
                   Hor Al Anz East - Dubai
                 </span>
               </div>
-              <div className="flex items-center">
-                <Phone className="w-4 h-4 mr-2 text-bb-blue" />
-                <span className="text-sm text-gray-400">+971 XX XXX XXXX</span>
-              </div>
-              <Button className="bb-gradient text-white w-full mt-4">
+              <Button 
+                className="bb-gradient text-white w-full mt-4"
+                onClick={() => window.open('https://www.instagram.com/beautiful_bundles_co/', '_blank')}
+              >
                 <Instagram className="w-4 h-4 mr-2" />
                 Follow @beautiful_bundles_co
               </Button>

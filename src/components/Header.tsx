@@ -10,7 +10,7 @@ const Header = () => {
           <img 
             src="/lovable-uploads/9ff5253f-18eb-430f-9092-7794521eaffa.png" 
             alt="Beautiful Bundles Logo" 
-            className="h-12 w-auto"
+            className="h-12 w-auto object-contain"
           />
         </div>
         
@@ -22,7 +22,12 @@ const Header = () => {
         </nav>
 
         <div className="flex items-center space-x-4">
-          <Button variant="outline" size="sm" className="border-bb-blue text-bb-blue hover:bg-bb-blue hover:text-white">
+          <Button 
+            variant="outline" 
+            size="sm" 
+            className="border-bb-blue text-bb-blue hover:bg-bb-blue hover:text-white"
+            onClick={() => window.open('https://www.instagram.com/beautiful_bundles_co/', '_blank')}
+          >
             <Instagram className="w-4 h-4 mr-2" />
             Follow Us
           </Button>

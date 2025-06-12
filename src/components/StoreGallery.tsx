@@ -18,13 +18,13 @@ const StoreGallery = () => {
             <img 
               src="/lovable-uploads/56b2f05d-4de6-44d3-bd83-159a98051b2f.png" 
               alt="Beautiful Bundles Store Interior" 
-              className="rounded-lg shadow-2xl w-full"
+              className="rounded-lg shadow-2xl w-full object-cover"
             />
             <div className="absolute -top-4 -right-4 w-20 h-20">
               <img 
                 src="/lovable-uploads/2475a604-6733-4eff-a091-5cbe5f061604.png" 
                 alt="Ni Character" 
-                className="w-full h-full animate-pulse"
+                className="w-full h-full object-contain animate-pulse"
               />
             </div>
           </div>
