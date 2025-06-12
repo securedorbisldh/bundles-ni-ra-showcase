@@ -82,8 +82,8 @@ const Footer = () => {
             © 2022-2025 Beautiful Bundles. All rights reserved. | A Brand That Brings Deals!
           </p>
           <p className="text-sm text-gray-500">
-            Developed by <span className="text-gray-300">Secured Orbis Private Limited</span> | 
-            Hosted by <span className="text-gray-300">Kloudbean</span>
+            Developed by <a href="https://securedorbis.com" target="_blank" rel="dofollow" className="text-gray-300 hover:text-white transition-colors">Secured Orbis</a> | 
+            Hosted by <a href="https://kloudbean.com" target="_blank" rel="dofollow" className="text-gray-300 hover:text-white transition-colors">Kloudbean</a>
           </p>
         </div>
       </div>
