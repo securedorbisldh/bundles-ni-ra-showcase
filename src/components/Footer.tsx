@@ -77,9 +77,13 @@ const Footer = () => {
           </div>
         </div>
 
-        <div className="border-t border-gray-800 pt-8 text-center">
+        <div className="border-t border-gray-800 pt-8 text-center space-y-2">
           <p className="text-gray-400">
-            © 2024 Beautiful Bundles. All rights reserved. | A Brand That Brings Deals!
+            © 2022-2025 Beautiful Bundles. All rights reserved. | A Brand That Brings Deals!
+          </p>
+          <p className="text-sm text-gray-500">
+            Developed by <span className="text-gray-300">Secured Orbis Private Limited</span> | 
+            Hosted by <span className="text-gray-300">Kloudbean</span>
           </p>
         </div>
       </div>
