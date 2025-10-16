@@ -1,8 +1,21 @@
 
 import { Instagram, MapPin, Clock, Mail } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import { Link, useLocation } from "react-router-dom";
 
 const Footer = () => {
+  const location = useLocation();
+  const isHomePage = location.pathname === '/';
+
+  const handleNavClick = (sectionId: string) => {
+    if (isHomePage) {
+      const element = document.getElementById(sectionId);
+      element?.scrollIntoView({ behavior: 'smooth' });
+    } else {
+      window.location.href = `/#${sectionId}`;
+    }
+  };
+
   return (
     <footer id="contact" className="bg-gray-900 text-white py-16">
       <div className="container mx-auto px-4">
@@ -34,11 +47,11 @@ const Footer = () => {
           <div>
             <h3 className="text-lg font-semibold mb-4 text-bb-blue">Quick Links</h3>
             <ul className="space-y-2">
-              <li><a href="/about" className="text-gray-400 hover:text-white transition-colors">About Us</a></li>
-              <li><a href="#brands" className="text-gray-400 hover:text-white transition-colors">Our Brands</a></li>
-              <li><a href="#location" className="text-gray-400 hover:text-white transition-colors">Store Location</a></li>
-              <li><a href="#contact" className="text-gray-400 hover:text-white transition-colors">Contact</a></li>
-              <li><a href="/privacy-policy" className="text-gray-400 hover:text-white transition-colors">Privacy Policy</a></li>
+              <li><Link to="/about" className="text-gray-400 hover:text-white transition-colors">About Us</Link></li>
+              <li><button onClick={() => handleNavClick('brands')} className="text-gray-400 hover:text-white transition-colors">Our Brands</button></li>
+              <li><button onClick={() => handleNavClick('location')} className="text-gray-400 hover:text-white transition-colors">Store Location</button></li>
+              <li><button onClick={() => handleNavClick('contact')} className="text-gray-400 hover:text-white transition-colors">Contact</button></li>
+              <li><Link to="/privacy-policy" className="text-gray-400 hover:text-white transition-colors">Privacy Policy</Link></li>
             </ul>
           </div>
 

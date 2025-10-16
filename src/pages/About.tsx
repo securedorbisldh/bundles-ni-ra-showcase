@@ -5,7 +5,7 @@ const About = () => {
   return (
     <div className="min-h-screen">
       <Header />
-      <main className="container mx-auto px-4 py-16">
+      <main className="container mx-auto px-4 py-16 pt-32">
         <h1 className="text-4xl font-bold mb-8 text-center">Welcome to Beautiful Bundles: A Brand that Brings Deals</h1>
         
         <div className="prose prose-lg max-w-4xl mx-auto space-y-6 text-gray-700">
