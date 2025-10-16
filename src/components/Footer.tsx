@@ -34,10 +34,11 @@ const Footer = () => {
           <div>
             <h3 className="text-lg font-semibold mb-4 text-bb-blue">Quick Links</h3>
             <ul className="space-y-2">
-              <li><a href="#about" className="text-gray-400 hover:text-white transition-colors">About Us</a></li>
+              <li><a href="/about" className="text-gray-400 hover:text-white transition-colors">About Us</a></li>
               <li><a href="#brands" className="text-gray-400 hover:text-white transition-colors">Our Brands</a></li>
-              <li><a href="#location" className="text-gray-700 hover:text-white transition-colors">Store Location</a></li>
+              <li><a href="#location" className="text-gray-400 hover:text-white transition-colors">Store Location</a></li>
               <li><a href="#contact" className="text-gray-400 hover:text-white transition-colors">Contact</a></li>
+              <li><a href="/privacy-policy" className="text-gray-400 hover:text-white transition-colors">Privacy Policy</a></li>
             </ul>
           </div>
 
