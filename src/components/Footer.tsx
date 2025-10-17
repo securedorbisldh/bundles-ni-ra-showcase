@@ -76,7 +76,7 @@ const Footer = () => {
                 <MapPin className="w-4 h-4 mr-2 mt-1 text-bb-pink" />
                 <span className="text-sm text-gray-400">
                   Century Mall, Ground Floor<br />
-                  Shop No-5, Al Wuheida St<br />
+                  Shop No-31, Al Wuheida St<br />
                   Hor Al Anz East - Dubai
                 </span>
               </div>

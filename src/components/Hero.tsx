@@ -47,7 +47,7 @@ const Hero = () => {
               <h3 className="font-semibold text-gray-800 mb-2">Location</h3>
               <p className="text-gray-600 text-sm">
                 Century Mall, Ground Floor<br />
-                Shop No-5, Al Wuheida St<br />
+                Shop No-31, Al Wuheida St<br />
                 Hor Al Anz East - Dubai
               </p>
             </div>
@@ -64,7 +64,7 @@ const Hero = () => {
 
           <Button 
             className="bb-gradient text-white text-lg px-8 py-3 rounded-full hover:scale-105 transition-transform shadow-lg"
-            onClick={() => window.open('https://g.co/kgs/Wsr2kfz', '_blank')}
+            onClick={() => window.open('https://share.google/9PSAd9WmmnPbYyLxw', '_blank')}
           >
             <MapPin className="w-5 h-5 mr-2" />
             Visit Our Store Today!
